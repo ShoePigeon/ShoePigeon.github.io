@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#bio {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#bio img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Mobile-first: Stack vertically on small screens */
+@media (max-width: 600px) {
+  .bio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bio img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eee;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
+
+
+:root {
+  --primary: #a87c68; /* Warm terracotta */
+  --primary-dark: #9d6b53;
+  --primary-hover: #b99884; /* Softer peachy terracotta */
+  --secondary: #cae0d5; /* Gentle sage green */
+  --secondary-hover: #dfe7e4; /* Muted pastel green */
+  --gray: #767676; /* Calm gray for text and borders */
+  --light-gray: #f7f5f2; /* Linen background */
+  --black: #2d2d2d; /* Soft charcoal */
+  --white: #fdfaf4; /* Creamy white */
+  --font-primary: "Playfair Display", serif;
+  --font-secondary: "Roboto", sans-serif;
+  --danger: rgb(168, 86, 86);
+  --success: rgb(143, 195, 143);
+}
+
+html {
+  font-family: var(--font-primary);
+  background-color: var(--white);
+}
+
+body {
+  background: var(--light-gray);
+  max-width: 100%;
+  height: 100vh;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+}
+
+/* top NAV bar styling*/
+nav {
+  background: var(--primary);
+  display: flex;
+  align-items: right;
+  z-index: 1; /* Ensure it is above the overlay */
+  position: relative; /* Required for z-index to work */
+  padding-bottom: 0.5rem;
+}
+
+nav h1 {
+  flex: auto;
+  margin: 0;
+  color: var(--light-gray);
+}
+
+nav h1 a {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  color: var(--light-gray);
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a,
+nav ul li span,
+header .action {
+  display: block;
+  padding-right: 1.4rem;
+  color: var(--light-gray);
+  font-size: 1.5em;
+}

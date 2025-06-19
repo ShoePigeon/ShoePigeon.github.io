@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Xu - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .contact-info {
+            font-size: 1.1em;
+            color: #7f8c8d;
+        }
+        h2 {
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .item-title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .item-subheader {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .item-date {
+            color: #7f8c8d;
+        }
+        .item-location {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skill-category {
+            flex-basis: 30%;
+        }
+        .skill-category h3 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .skill-category {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Robert Xu</h1>
+        <div class="contact-info">949-351-2901 | xurobert1205@gmail.com</div>
+        <a href="./index.html" title="Home">
+            <i class="fas fa-home"></i>
+        </a>
+    </header>
+
+    <section class="section">
+        <h2>EDUCATION</h2>
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">University of California, Los Angeles</span>
+                <span class="item-date">Sep. 2019 – Jun. 2023</span>
+            </div>
+            <div class="item-subheader">            
+                <span class="item-location">Bachelor of Science in Biology, Minor in Bioinformatics</span>
+                <span>Magna Cum Laude</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">University of California, San Diego</span>
+                <span class="item-date">Expected June 2026</span>
+            </div>
+            <div class="item-location">Masters of Science in Computer Science</div>
+            <div>Relevant Coursework: Computational Biology, Molecular Biology, Bioinformatics Algorithms, Data Structures & Algorithms, Machine Learning</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>EXPERIENCE</h2>
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Quality Assurance Inspector</span>
+                <span class="item-date">Nov. 2023 – Sep. 2024</span>
+            </div>
+            <div class="item-subheader">            
+                <div class="item-location">Balt USA</div>
+                <div class = "item-location">Irvine, CA</div>
+            </div>
+            <ul>
+                <li>Inspect endovascular embolization products and paperwork to determine guidelines satisfaction</li>
+                <li>Coordinate with the Production, Inventory, and Finance department to guarantee delivery deadlines</li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Research Assistant</span>
+                <span class="item-date">Sep. 2021 – Sep. 2024</span>
+            </div>
+            <div class="item-subheader">
+                <span class="item-location">UCLA Medical Center, Neurology</span>
+                <span class="item-location">Los Angeles, CA</span>
+            </div>
+            
+            <ul>
+                <li>Investigated the effect of soluble tau protein post-translational modifications on the aggregation of pathological tau</li>
+                <li>Researched pathological tau strain aggregation and movement in mice brains after injection</li>
+                <li>Developed strong communication and independent working skills through teaching and working with peers</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>PROJECTS</h2>
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Text Classification Transformer | Python</span>
+                <span class="item-date">Nov. 2024 - Dec. 2024</span>
+            </div>
+            <ul>
+                <li>Created a basic Transformer model based on Vaswani et al. "Attention is All You Need" for text classification</li>
+                <li>Coded a simple encoder-decoder model that could categorize sentences to texts with 90% accuracy</li>
+                <li>Evaluated the model on text classification tasks and implemented architectural changes to improve the model</li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Developer Dashboard Website | HTML/CSS, Javascript, Flask, SQLite</span>
+                <span class="item-date">Sep. 2024 - Dec. 2024</span>
+            </div>
+            <ul>
+                <li>Designed and developed a full-stack developer-focused dashboard application using SQLite, Flask, and Node.JS as part of a team</li>
+                <li>Created dynamic HTML pages with navigational functionality</li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Genome Sequencing Script | Python</span>
+                <span class="item-date">Jan. 2019 – Mar. 2019</span>
+            </div>
+            <ul>
+                <li>Developed a Python script for reconstructing genome sequences from variable-length k-mers by filtering inaccuracies and constructing a de Bruijn graph to generate a Eulerian cycle</li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">ML Sentiment Analysis Project | Python</span>
+                <span class="item-date">Nov. 2024 - Dec. 2024</span>
+            </div>
+            <ul>
+                <li>Conducted an in-depth analysis of bias in sentiment analysis tasks using multiple Natural Language Processing (NLP) frameworks, including VADER, BERT, and RoBERTa</li>
+                <li>Designed and implemented benchmark tests to compare the performance and bias metrics across frameworks, producing actionable insights into their suitability for various use cases</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>TECHNICAL SKILLS</h2>
+        <div class="skills-list">
+            <div class="skill-category">
+                <h3>Languages:</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>Javascript</li>
+                    <li>HTML/CSS</li>
+                    <li>Java</li>
+                    <li>R</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks:</h3>
+                <ul>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Flask</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Libraries:</h3>
+                <ul>
+                    <li>PyTorch</li>
+                    <li>scikit-learn</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Matplotlib</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Bioinformatics:</h3>
+                <ul>
+                    <li>BioPython</li>
+                    <li>FASTA</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
